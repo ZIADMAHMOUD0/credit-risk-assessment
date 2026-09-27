@@ -3,7 +3,7 @@
 Predicts whether a loan applicant is **high-risk** (likely to default) or **low-risk**. The project compares four classical ML models with a neural network, and ships the best neural network as an interactive **Streamlit** web app.
 
 - **Dataset:** [Credit Risk Dataset (Kaggle)](https://www.kaggle.com/datasets/laotse/credit-risk-dataset), 32,581 loan records
-- **Notebook on Kaggle:** [ds-project-credit-risk-assessment](https://www.kaggle.com/code/rahmamabdelfattah/ds-project-credit-risk-assessment)
+- **Notebook on Kaggle:** [credit-risk-assessment](https://www.kaggle.com/code/ziadmahmoud1310/credit-risk-assessment)
 - **Full report:** [report.pdf](report.pdf)
 
 ## Results
