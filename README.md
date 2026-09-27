@@ -59,8 +59,8 @@ The tuned neural network's confusion matrix on the test set:
 ## Run the app locally
 
 ```bash
-git clone <this-repo-url>
-cd <repo-folder>
+git clone https://github.com/ZIADMAHMOUD0/credit-risk-assessment.git
+cd credit-risk-assessment
 pip install -r requirements.txt
 streamlit run app.py
 ```
