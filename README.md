@@ -69,7 +69,7 @@ Then open http://localhost:8501, enter the applicant's details and click **Predi
 
 ## Re-running the notebook
 
-The notebook reads its data from Kaggle's path (`/kaggle/input/credit-risk-dataset/credit_risk_dataset.csv`). Run it on Kaggle with the dataset attached. To run it locally, download `credit_risk_dataset.csv` and update the path in the second cell.
+On Kaggle, attach the [credit-risk-dataset](https://www.kaggle.com/datasets/laotse/credit-risk-dataset) as an input and click **Run All**. Locally, download `credit_risk_dataset.csv` into the project folder. The notebook finds the file in either place.
 
 ## Project structure
 
