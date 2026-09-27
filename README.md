@@ -13,16 +13,20 @@ Accuracy on a held-out 20% test set (6,453 applicants):
 | Model | Accuracy |
 |---|---|
 | Perceptron | 80.2% |
-| Logistic Regression | 86.0% |
+| Logistic Regression | 86.1% |
 | SVM (RBF kernel) | 91.4% |
-| Random Forest (200 trees) | **93.5%** |
-| Neural Network (baseline, 32→16) | 91.9% |
-| Neural Network (tuned, 64→32→Dropout→16) | 92.2% |
+| Random Forest (200 trees) | **93.46%** |
+| Neural Network (baseline, 32→16) | 92.6% |
+| Neural Network (tuned, 64→32→Dropout→16) | 92.3% |
+
+All seeds are fixed (`random_state=42` for scikit-learn, `set_random_seed(42)` plus deterministic ops for TensorFlow), so re-running the notebook reproduces these numbers exactly. The tuning was selected on validation accuracy; on the test set the tuned network did not beat the simpler baseline.
+
+![Model comparison](images/model_comparison.png)
 
 The tuned neural network's confusion matrix on the test set:
 
-- **Precision:** 92.6% of the applicants it flags as high-risk actually defaulted.
-- **Recall:** it catches 70% of the defaulters.
+- **Precision:** 93.6% of the applicants it flags as high-risk actually defaulted.
+- **Recall:** it catches 69.8% of the defaulters.
 
 <p align="center">
   <img src="images/cm_best_model.png" width="45%">
